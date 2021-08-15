@@ -13,6 +13,12 @@ module.exports = {
       8: "40px",
     },
     colors: {
+      white: {
+        DEFAULT: "#FFF",
+      },
+      black: {
+        DEFAULT: "#000",
+      },
       orange: {
         DEFAULT: "#F9690E",
       },

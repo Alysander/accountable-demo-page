@@ -13,4 +13,8 @@ body {
   body {
     @apply bg-gray-lightest;
   }
+
+  .top-level-container {
+    @apply container p-4 bg-white;
+  }
 }
