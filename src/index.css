@@ -8,3 +8,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: "DM Sans", sans-serif;
 }
+
+@layer base {
+  body {
+    @apply bg-gray-lightest;
+  }
+}
