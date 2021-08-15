@@ -1,11 +1,11 @@
 import { IUser } from "../IUser";
 
-import avatar1 from "./assets/mellisa.svg";
-import avatar2 from "./assets/david.svg";
-import avatar3 from "./assets/evans.svg";
-import avatar4 from "./assets/sara.svg";
-import avatar5 from "./assets/guy.svg";
-import avatar6 from "./assets/guy1.svg";
+import avatar1 from "../assets/mellisa.svg";
+import avatar2 from "../assets/david.svg";
+import avatar3 from "../assets/evans.svg";
+import avatar4 from "../assets/sara.svg";
+import avatar5 from "../assets/guy.svg";
+import avatar6 from "../assets/guy2.svg";
 
 const Mellisa: IUser = {
     full_name: "Mellisa Bay",
