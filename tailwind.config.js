@@ -12,6 +12,17 @@ module.exports = {
       7: "35px",
       8: "40px",
     },
+    colors: {
+      orange: {
+        DEFAULT: "#F9690E",
+      },
+      gray: {
+        dark: "#595959",
+        DEFAULT: "#65676B",
+        light: "#C5C5C5",
+        lightest: "#E5E5E5",
+      },
+    },
   },
   variants: {
     extend: {},
