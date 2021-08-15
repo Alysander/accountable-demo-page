@@ -1,4 +1,7 @@
 import { IUser } from "../IUser"
+import { CommentButton } from "./CommentButton"
+import { ReactionButton } from "./ReactionButton"
+import { ReportButton } from "./ReportButton"
 
 interface IArticle {
     author: IUser,
@@ -17,8 +20,8 @@ const Article = ({
     reactionCount,
     timePosted }: IArticle) => (
 
-    <article className="top-level-container py-3 flex flex-col gap-3">
-        <div className="flex justify-between">
+    <article className="top-level-container py-3">
+        <div className="flex justify-between mb-3">
             <div className="flex">
                 <img src={author.avatar} alt="Avatar" className="rounded-full" />
                 <div className="flex flex-col ml-2">
@@ -30,10 +33,15 @@ const Article = ({
                     </p>
                 </div>
             </div>
+            <div>
+                <ReportButton />
+            </div>
         </div>
-        <p>
+        <p className="mb-3">
             {description}
         </p>
+        <CommentButton commentCount={commentCount} className="mr-3" />
+        <ReactionButton reactionCount={reactionCount} />
     </article>
 )
 
