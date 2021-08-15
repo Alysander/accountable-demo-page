@@ -1,6 +1,23 @@
+import { IUser } from "../IUser"
 
-const Article = () => (
-    <article>
+interface IArticle {
+    author: IUser,
+    description: string,
+    photo?: string,
+    commentCount: number,
+    reactionCount: number,
+    timePosted: string,
+}
+
+const Article = ({
+    author,
+    description,
+    photo,
+    commentCount,
+    reactionCount,
+    timePosted }: IArticle) => (
+
+    <article className="top-level-container">
 
     </article>
 )
