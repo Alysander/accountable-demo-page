@@ -13,9 +13,12 @@ body {
   body {
     @apply bg-gray-lightest;
   }
+  .base-container {
+    @apply bg-white container;
+  }
 
   /* The intention here is to reuse the bg and responsive x padding classes */
-  .top-level-container {
-    @apply container px-4 bg-white;
+  .dynamic-px {
+    @apply px-4;
   }
 }

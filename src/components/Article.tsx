@@ -6,7 +6,7 @@ import { ReportButton } from "./ReportButton"
 interface IArticle {
     author: IUser,
     description: string,
-    photo?: string,
+    photoPath?: string,
     commentCount: number,
     reactionCount: number,
     timePosted: string,
@@ -15,13 +15,13 @@ interface IArticle {
 const Article = ({
     author,
     description,
-    photo,
+    photoPath,
     commentCount,
     reactionCount,
     timePosted }: IArticle) => (
 
-    <article className="top-level-container py-3">
-        <div className="flex justify-between mb-3">
+    <article className="base-container py-3">
+        <div className="dynamic-px flex justify-between mb-3">
             <div className="flex">
                 <img src={author.avatar} alt="Avatar" className="rounded-full" />
                 <div className="flex flex-col ml-2">
@@ -37,11 +37,15 @@ const Article = ({
                 <ReportButton />
             </div>
         </div>
-        <p className="mb-3">
-            {description}
-        </p>
-        <CommentButton commentCount={commentCount} className="mr-3" />
-        <ReactionButton reactionCount={reactionCount} />
+        {photoPath && <img src={photoPath} />}
+        <div className="dynamic-px">
+            <p className="mb-3">
+                {description}
+            </p>
+            <CommentButton commentCount={commentCount} className="mr-3" />
+            <ReactionButton reactionCount={reactionCount} />
+        </div>
+
     </article>
 )
 
