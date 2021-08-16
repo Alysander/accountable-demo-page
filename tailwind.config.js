@@ -39,6 +39,14 @@ module.exports = {
         lightest: "#F4F5F7",
       },
     },
+    extend: {
+      gridTemplateColumns: {
+        large: "320px auto 250px",
+      },
+      gridTemplateRows: {
+        large: "200px auto", //small height for the livestream
+      },
+    },
   },
   variants: {
     extend: {},
