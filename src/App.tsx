@@ -8,12 +8,14 @@ import { TrendingPostList } from './components/TrendingPostList';
 function App() {
   return (
 
-    <div className="pb-8 grid grid-cols-1 gap-4">
+    <div className="pb-8">
       <Header />
-      <ArticleList />
-      <TrendingPostList />
-      <MilestoneList />
-      <Livestream />
+      <div className="grid grid-cols-1 gap-4 md:px-8">
+        <ArticleList />
+        <TrendingPostList />
+        <MilestoneList />
+        <Livestream />
+      </div>
     </div>
   );
 }

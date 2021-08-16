@@ -2,9 +2,12 @@ import hamburger from "../assets/HamburgerMenu.svg"
 import logo from "../assets/Logo.svg"
 
 const Header = () => (
-    <header className="base-container dynamic-px py-4 mx-auto flex justify-between mb-4">
-        <img src={logo} alt="Logo" />
-        <img src={hamburger} alt="Menu" />
+    <header className="px-4 py-4 mb-8 bg-white md:px-8">
+        <div className="container  mx-auto flex justify-between">
+
+            <img src={logo} alt="Logo" />
+            <img src={hamburger} alt="Menu" />
+        </div>
     </header>
 )
 
