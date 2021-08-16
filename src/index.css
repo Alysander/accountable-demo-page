@@ -28,4 +28,8 @@ body {
   .dynamic-px {
     @apply px-4;
   }
+
+  .orange-link {
+    @apply text-orange underline font-bold;
+  }
 }

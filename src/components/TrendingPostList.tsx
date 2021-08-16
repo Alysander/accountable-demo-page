@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { David, May, Sara } from "../exampleData/example_authors";
 import { TrendingPost } from "./TrendingPost";
 
@@ -21,6 +22,9 @@ const TrendingPostList = () => (
             author={Sara}
             timePosted="6h ago"
         />
+        <a href="#" className="orange-link mt-2">
+            View all milestones →
+        </a>
     </div>
 )
 export { TrendingPostList }
