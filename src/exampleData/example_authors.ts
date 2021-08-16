@@ -6,6 +6,7 @@ import avatar3 from "../assets/evans.svg";
 import avatar4 from "../assets/sara.svg";
 import avatar5 from "../assets/guy.svg";
 import avatar6 from "../assets/guy2.svg";
+import avatar7 from "../assets/girl.svg";
 
 const Mellisa: IUser = {
     full_name: "Mellisa Bay",
@@ -25,10 +26,6 @@ const Sara: IUser = {
     full_name: "Sara Jack",
     avatar: avatar4,
 }
-const May: IUser = {
-    full_name: "May Day",
-    avatar: avatar4,
-}
 
 //These names never show in the example
 const Max: IUser = {
@@ -39,6 +36,11 @@ const Max: IUser = {
 const Sam: IUser = {
     full_name: "Sam Serious",
     avatar: avatar6,
+}
+
+const May: IUser = {
+    full_name: "May Day",
+    avatar: avatar7,
 }
 
 export { Mellisa, David, Evans, Sara, Max, May, Sam };
