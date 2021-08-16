@@ -23,7 +23,7 @@ const TrendingPostList = () => (
             timePosted="6h ago"
         />
         <a href="#" className="orange-link mt-2">
-            View all milestones →
+            View all stories →
         </a>
     </div>
 )
