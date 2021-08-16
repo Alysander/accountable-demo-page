@@ -10,13 +10,13 @@ function App() {
 
     <div className="pb-8">
       <Header />
-      <div className="grid grid-cols-1 gap-4 md:px-8 md:grid-cols-2 top-level-max-width ">
-        <div className="md:col-span-2">
+      <div className="grid grid-cols-1 gap-4 md:px-8 md:grid-cols-2 lg:grid-cols-5 top-level-max-width ">
+        <div className="md:col-span-2 ">
           <ArticleList />
         </div>
-        <TrendingPostList />
-        <MilestoneList />
-        <div className="md:col-span-2">
+        <div><TrendingPostList /></div>
+        <div><MilestoneList /></div>
+        <div className="md:col-span-2 ">
           <Livestream />
         </div>
       </div>

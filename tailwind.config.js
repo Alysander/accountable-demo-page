@@ -15,6 +15,7 @@ module.exports = {
       "1em": "1em",
       "0.66em": "0.66em",
       "0.33em": "0.33em",
+      unset: "unset",
     },
     colors: {
       transparent: "transparent",
