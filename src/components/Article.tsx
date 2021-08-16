@@ -24,7 +24,7 @@ const Article = ({
     <article className="base-container py-3">
         <div className="dynamic-px flex justify-between mb-3">
             <div className="flex">
-                <Avatar author={author} />
+                <Avatar user={author} />
                 <div className="flex flex-col ml-2">
                     <h3>
                         {author.full_name}

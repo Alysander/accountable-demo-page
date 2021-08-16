@@ -2,10 +2,10 @@ import { IUser } from "../IUser";
 
 
 interface IAvatarProps {
-    author: IUser,
+    user: IUser,
 }
 
-const Avatar = ({ author }: IAvatarProps) => (
+const Avatar = ({ user: author }: IAvatarProps) => (
     <img src={author.avatar} alt="Avatar" className="rounded-full" />
 )
 

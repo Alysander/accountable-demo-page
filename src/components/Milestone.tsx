@@ -9,7 +9,7 @@ interface IMilestoneProps {
 
 const Milestone = ({ author, title }: IMilestoneProps) => (
     <div className="flex gap-2">
-        <Avatar author={author} />
+        <Avatar user={author} />
         <p className="text-gray">
             {title}
         </p>
