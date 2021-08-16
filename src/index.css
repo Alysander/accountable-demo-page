@@ -14,7 +14,7 @@ body {
     @apply bg-gray-lightest;
   }
   .base-container {
-    @apply bg-white container rounded mx-auto;
+    @apply bg-white rounded;
   }
   h2 {
     @apply font-bold text-gray;
