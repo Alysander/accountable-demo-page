@@ -10,7 +10,7 @@ function App() {
 
     <div className="pb-8">
       <Header />
-      <div className="grid grid-cols-1 gap-4 md:px-8 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 md:px-8 md:grid-cols-2 top-level-max-width ">
         <div className="md:col-span-2">
           <ArticleList />
         </div>
