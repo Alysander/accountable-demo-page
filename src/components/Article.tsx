@@ -6,7 +6,7 @@ import { ReportButton } from "./ReportButton"
 interface IArticle {
     author: IUser,
     description: string,
-    photoPath?: string,
+    photo?: { path: string, alt: string },
     commentCount: number,
     reactionCount: number,
     timePosted: string,
@@ -15,7 +15,7 @@ interface IArticle {
 const Article = ({
     author,
     description,
-    photoPath,
+    photo,
     commentCount,
     reactionCount,
     timePosted }: IArticle) => (
@@ -37,7 +37,11 @@ const Article = ({
                 <ReportButton />
             </div>
         </div>
-        {photoPath && <img src={photoPath} />}
+        {
+            // go home eslint you're drunk. It's complaining about the variable named photo.
+            // eslint-disable-next-line jsx-a11y/img-redundant-alt
+            photo && <img src={photo.path} alt={photo?.alt} className="mb-3" />
+        }
         <div className="dynamic-px">
             <p className="mb-3">
                 {description}
