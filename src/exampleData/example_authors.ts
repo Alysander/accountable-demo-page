@@ -25,6 +25,10 @@ const Sara: IUser = {
     full_name: "Sara Jack",
     avatar: avatar4,
 }
+const May: IUser = {
+    full_name: "May Day",
+    avatar: avatar4,
+}
 
 //These names never show in the example
 const Max: IUser = {
@@ -37,4 +41,4 @@ const Sam: IUser = {
     avatar: avatar6,
 }
 
-export { Mellisa, David, Evans, Sara, Max, Sam };
+export { Mellisa, David, Evans, Sara, Max, May, Sam };
