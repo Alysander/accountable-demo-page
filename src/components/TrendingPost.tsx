@@ -10,7 +10,7 @@ const TrendingPost = ({ author, title, timePosted }: TrendingPostProps) => (
     <>
         <h3>{title}</h3>
         <div className="flex justify-between text-gray">
-            <div  >
+            <div>
                 {author.full_name}
             </div>
             <div>
