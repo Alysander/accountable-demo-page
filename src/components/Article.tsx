@@ -1,4 +1,5 @@
 import { IUser } from "../IUser"
+import { Avatar } from "./Avatar"
 import { CommentButton } from "./CommentButton"
 import { ReactionButton } from "./ReactionButton"
 import { ReportButton } from "./ReportButton"
@@ -23,7 +24,7 @@ const Article = ({
     <article className="base-container py-3">
         <div className="dynamic-px flex justify-between mb-3">
             <div className="flex">
-                <img src={author.avatar} alt="Avatar" className="rounded-full" />
+                <Avatar author={author} />
                 <div className="flex flex-col ml-2">
                     <h2 className="font-bold">
                         {author.full_name}
