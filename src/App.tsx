@@ -5,7 +5,7 @@ import { Header } from './components/Header';
 function App() {
   return (
 
-    <div>
+    <div className="pb-8">
       <Header />
       <ArticleList />
     </div>
