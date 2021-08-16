@@ -26,9 +26,9 @@ const Article = ({
             <div className="flex">
                 <Avatar author={author} />
                 <div className="flex flex-col ml-2">
-                    <h2 className="font-bold">
+                    <h3>
                         {author.full_name}
-                    </h2>
+                    </h3>
                     <p className="text-gray">
                         {timePosted}
                     </p>

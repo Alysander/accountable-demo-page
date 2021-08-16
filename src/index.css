@@ -16,6 +16,13 @@ body {
   .base-container {
     @apply bg-white container;
   }
+  h2 {
+    @apply font-bold text-gray;
+  }
+
+  h3 {
+    @apply font-bold;
+  }
 
   /* The intention here is to reuse the bg and responsive x padding classes */
   .dynamic-px {
