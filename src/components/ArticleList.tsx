@@ -4,6 +4,7 @@ import codewellAdvertisement from "../assets/codewellAdvertisement.png";
 import { CreatePost } from "./CreatePost";
 import { TrendingPostList } from "./TrendingPostList";
 import { MilestoneList } from "./MilestoneList";
+import { Livestream } from "./Livestream";
 
 const ArticleList = () => (
     <div className="flex flex-col gap-4">
@@ -36,6 +37,8 @@ const ArticleList = () => (
         />
         <TrendingPostList />
         <MilestoneList />
+        <Livestream />
+
     </div>
 )
 

@@ -3,6 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     spacing: {
+      0: "0px",
       1: "5px",
       2: "10px",
       3: "15px",
@@ -11,8 +12,15 @@ module.exports = {
       6: "30px",
       7: "35px",
       8: "40px",
+      "1em": "1em",
+      "0.66em": "0.66em",
+      "0.33em": "0.33em",
     },
     colors: {
+      transparent: "transparent",
+      red: {
+        DEFAULT: "#EC6580",
+      },
       white: {
         DEFAULT: "#FFF",
       },
@@ -25,6 +33,7 @@ module.exports = {
       gray: {
         dark: "#595959",
         DEFAULT: "#65676B",
+        livestream: "#9C969C",
         light: "#C5C5C5",
         lightest: "#E5E5E5",
       },
