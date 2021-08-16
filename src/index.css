@@ -32,6 +32,9 @@ body {
   .orange-link {
     @apply text-orange underline font-bold;
   }
+  .top-level-max-width {
+    @apply max-w-screen-xl mx-auto;
+  }
 }
 
 @layer components {
