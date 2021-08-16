@@ -24,9 +24,9 @@ body {
     @apply font-bold;
   }
 
-  /* The intention here is to reuse the bg and responsive x padding classes */
+  /* The intention here is to reuse the responsive x padding classes */
   .dynamic-px {
-    @apply px-4;
+    @apply px-4 md:px-5;
   }
 
   .orange-link {
