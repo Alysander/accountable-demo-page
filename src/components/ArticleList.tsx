@@ -2,8 +2,6 @@ import { Article } from "./Article";
 import { David, Evans, Mellisa } from "../exampleData/example_authors";
 import codewellAdvertisement from "../assets/codewellAdvertisement.png";
 import { CreatePost } from "./CreatePost";
-import { TrendingPostList } from "./TrendingPostList";
-import { MilestoneList } from "./MilestoneList";
 
 const ArticleList = () => (
     <div className="flex flex-col gap-4">
@@ -34,9 +32,6 @@ const ArticleList = () => (
             reactionCount={121}
             timePosted="6h ago"
         />
-        <TrendingPostList />
-        <MilestoneList />
-
     </div>
 )
 

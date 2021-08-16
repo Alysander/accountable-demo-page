@@ -2,7 +2,7 @@ import livestreamPreview from "../assets/livestreamPreview.jpg";
 import eye from "../assets/eye.svg"
 
 const Livestream = () => (
-    <div className="base-container relative mt-6">
+    <div className="base-container relative mt-2">
         <img src={livestreamPreview} alt="Livestream" />
 
         <div className="absolute top-0 left-0 right-0 bottom-0 fade-overlay-bg p-1em flex flex-col justify-between text-white text-xs" >
