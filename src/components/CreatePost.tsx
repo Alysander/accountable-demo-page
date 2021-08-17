@@ -1,6 +1,6 @@
 import { IUser } from "../IUser";
 import { Avatar } from "./Avatar";
-import photoIcon from "../assets/photos.svg"
+import photoIconPath from "../assets/photos.svg"
 
 interface ICreatePostProps {
     user: IUser
@@ -17,7 +17,7 @@ const CreatePost = ({ user }: ICreatePostProps) => (
 
             />
             <button className="pr-4" >
-                <img src={photoIcon} alt="Upload" />
+                <img src={photoIconPath} alt="Upload" />
             </button>
         </div>
 

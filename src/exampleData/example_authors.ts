@@ -10,37 +10,37 @@ import avatar7 from "../assets/girl.svg";
 
 const Mellisa: IUser = {
     full_name: "Mellisa Bay",
-    avatar: avatar1,
+    avatarPath: avatar1,
 }
 
 const David: IUser = {
     full_name: "David Rug",
-    avatar: avatar2
+    avatarPath: avatar2
 }
 
 const Evans: IUser = {
     full_name: "Evans Jerry",
-    avatar: avatar3,
+    avatarPath: avatar3,
 }
 const Sara: IUser = {
     full_name: "Sara Jack",
-    avatar: avatar4,
+    avatarPath: avatar4,
 }
 
 //These names never show in the example
 const Max: IUser = {
     full_name: "Max Power",
-    avatar: avatar5,
+    avatarPath: avatar5,
 }
 
 const Sam: IUser = {
     full_name: "Sam Serious",
-    avatar: avatar6,
+    avatarPath: avatar6,
 }
 
 const May: IUser = {
     full_name: "May Day",
-    avatar: avatar7,
+    avatarPath: avatar7,
 }
 
 export { Mellisa, David, Evans, Sara, Max, May, Sam };
