@@ -2,6 +2,8 @@
 import { ReactNode, useState } from "react";
 import hamburgerMenuPath from "../assets/hamburger_menu.svg"
 import logoPath from "../assets/logo.svg"
+import { Evans } from "../exampleData/example_authors";
+import { Avatar } from "./Avatar";
 
 const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,7 +17,7 @@ const Header = () => {
                     <img src={hamburgerMenuPath} alt="Menu" onClick={() => { setMobileMenuOpen(!mobileMenuOpen) }} />
                 </button>
                 {/* 1) Must overflow on small screens so set min-w to 100%
-                    2) So that it doesn't permanently take up space on the screen, set it to 1px height when it's closed.
+                    2) So that it doesn't permanently take up space on the screen, set it to 0px height when it's closed.
                     3) Scale up height when it's open and add on appropriate margin above it
                     4) Prevent it overflowing on md screens and closed state styling (extra margin, opacity, height)
                       */}
@@ -25,7 +27,9 @@ const Header = () => {
                     (
                         mobileMenuOpen ? "mt-4 opacity-100 h-auto"
                             : "opacity-0 h-0 ")} />
-
+                <div className="hidden lg:block" >
+                    <AccountLink />
+                </div>
             </div>
         </header>
     )
@@ -33,10 +37,11 @@ const Header = () => {
 
 const NavList = ({ className }: { className: string }) => (
     <nav className={className}>
-        <ul className="flex flex-col gap-2 bg-white md:flex-row text-lg text-gray">
+        <ul className="flex flex-col gap-4 bg-white md:flex-row text-lg text-gray">
             <ListLink>Feed</ListLink>
             <ListLink>Milestones</ListLink>
             <ListLink>Groups</ListLink>
+            <div className="lg:hidden"><ListLink>{Evans.full_name} </ListLink></div>
         </ul>
     </nav >
 )
@@ -45,5 +50,12 @@ const ListLink = ({ children }: { children: ReactNode }) => (
         <li>{children}</li>
     </a>
 )
-
+const AccountLink = () => (
+    <div className="flex gap-2">
+        <Avatar user={Evans} />
+        <div className="text-lg">
+            {Evans.full_name}
+        </div>
+    </div>
+)
 export { Header }
