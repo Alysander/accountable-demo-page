@@ -16,7 +16,7 @@ const Header = () => {
             <div className="flex justify-between top-level-max-width flex-wrap">
 
                 <img src={logoPath} alt="Logo" />
-                <button className="md:hidden">
+                <button className="lg:hidden">
                     <img src={hamburgerMenuPath} alt="Menu" onClick={() => { setMobileMenuOpen(!mobileMenuOpen) }} />
                 </button>
                 {/* 1) Must overflow on small screens so set min-w to 100%
@@ -25,7 +25,7 @@ const Header = () => {
                     4) Prevent it overflowing on md screens and closed state styling (extra margin, opacity, height)
                       */}
                 <NavList className={" min-w-full " +
-                    " md:min-w-min md:mt-unset md:opacity-100 lg:h-auto lg:transition-none" +
+                    " lg:min-w-min lg:mt-unset lg:opacity-100 lg:h-auto lg:transition-none" +
                     " transform transition ease-in duration-200 origin-top " +
                     (
                         mobileMenuOpen ? "mt-4 opacity-100 h-auto"
@@ -40,7 +40,7 @@ const Header = () => {
 
 const NavList = ({ className }: { className: string }) => (
     <nav className={className}>
-        <ul className="flex flex-col gap-4 bg-white md:flex-row text-lg text-gray">
+        <ul className="flex flex-col gap-4 bg-white lg:flex-row text-lg text-gray">
             <ListLink>Feed</ListLink>
             <ListLink>Milestones</ListLink>
             <ListLink>Groups</ListLink>
