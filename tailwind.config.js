@@ -36,6 +36,7 @@ module.exports = {
         DEFAULT: "#65676B",
         livestream: "#9C969C",
         light: "#C5C5C5",
+        lighter: "#E5E7EB",
         lightest: "#F4F5F7",
       },
     },

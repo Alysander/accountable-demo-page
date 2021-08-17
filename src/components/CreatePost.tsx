@@ -6,7 +6,7 @@ interface ICreatePostProps {
     user: IUser
 }
 const CreatePost = ({ user }: ICreatePostProps) => (
-    <div className="base-container dynamic-px py-3 flex">
+    <div className="base-container dynamic-px py-3 flex items-center">
         <Avatar user={user} />
 
         <div className="border overflow-hidden rounded ml-3 border-gray-light flex-grow flex items-center focus-within:border-black  ">

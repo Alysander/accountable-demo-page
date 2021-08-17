@@ -1,7 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { ReactNode, useState } from "react";
+
 import hamburgerMenuPath from "../assets/hamburger_menu.svg"
 import logoPath from "../assets/logo.svg"
+import bellPath from "../assets/bell.svg"
+
 import { Evans } from "../exampleData/example_authors";
 import { Avatar } from "./Avatar";
 
@@ -51,11 +54,16 @@ const ListLink = ({ children }: { children: ReactNode }) => (
     </a>
 )
 const AccountLink = () => (
-    <div className="flex gap-2">
-        <Avatar user={Evans} />
-        <div className="text-lg">
+    <div className="flex">
+        <button className="rounded-full border border-gray-lighter w-6 h-6 mx-3">
+            <img src={bellPath} alt="Notifications" className="mx-auto" />
+        </button>
+        <a href="#" className="text-lg mr-1">
+            <Avatar user={Evans} />
+        </a>
+        <a href="#" className="text-lg hover:underline">
             {Evans.full_name}
-        </div>
+        </a>
     </div>
 )
 export { Header }

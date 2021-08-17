@@ -6,7 +6,7 @@ interface IAvatarProps {
 }
 
 const Avatar = ({ user: author }: IAvatarProps) => (
-    <img src={author.avatarPath} alt="Avatar" className="rounded-full" />
+    <img src={author.avatarPath} alt="Avatar" className="rounded-full w-6 h-6" />
 )
 
 export { Avatar }
