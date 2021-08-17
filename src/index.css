@@ -14,7 +14,7 @@ body {
     @apply bg-gray-lightest;
   }
   .base-container {
-    @apply bg-white rounded;
+    @apply bg-white rounded overflow-hidden;
   }
   h2 {
     @apply font-bold text-gray;
@@ -24,7 +24,7 @@ body {
     @apply font-bold;
   }
 
-  /* The intention here is to reuse the responsive x padding classes */
+  /* The intention here is to reuse the responsive x padding classes on top level component */
   .dynamic-px {
     @apply px-4 md:px-5;
   }
