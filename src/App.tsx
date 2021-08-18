@@ -8,9 +8,11 @@ import { TrendingPostList } from './components/TrendingPostList';
 function App() {
   return (
 
-    <div className="pb-8">
+    <>
       <Header />
-      <div className={`grid grid-cols-1 gap-4
+      <main className={`
+        py-8
+        grid grid-cols-1 gap-4
         md:px-8 md:grid-cols-2
         lg:grid-cols-large lg:grid-rows-large  top-level-max-width
       `}>
@@ -22,8 +24,8 @@ function App() {
         <div className="md:col-span-2 lg:col-span-1 lg:order-3">
           <Livestream />
         </div>
-      </div>
-    </div>
+      </main>
+    </>
   );
 }
 
