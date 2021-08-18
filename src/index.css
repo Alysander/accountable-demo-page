@@ -30,8 +30,9 @@ body {
   }
 
   .orange-link {
-    @apply text-orange underline font-bold;
+    @apply text-orange remove-hover-underline font-bold;
   }
+
   .top-level-max-width {
     @apply max-w-screen-xl mx-auto;
   }
@@ -48,5 +49,30 @@ body {
       rgba(196, 196, 196, 0) 0%,
       rgba(0, 0, 0, 0.87) 100%
     );
+  }
+}
+
+@layer utilities {
+  .hover-underline {
+    text-decoration-color: transparent;
+    text-decoration-line: underline;
+    /* transition-property: text-decoration-color; */
+    /* since this may overwrite other transition properties be inclusive */
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+
+  .hover-underline:hover {
+    text-decoration-color: currentColor;
+  }
+
+  .remove-hover-underline {
+    transition-property: all;
+    text-decoration-line: underline;
+    transition-duration: 0.5s;
+  }
+
+  .remove-hover-underline:hover {
+    text-decoration-color: transparent;
   }
 }
