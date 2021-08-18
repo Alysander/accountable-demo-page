@@ -21,7 +21,7 @@ const Button = ({ icon, caption, className }: IButton) => {
     const path: string = iconPaths[icon];
 
     return (
-        <button className={`rounded border border-gray-light px-2 py-1 text-gray hover:underline ${className} `}>
+        <button className={`rounded border ${className} px-2 py-1 border-gray-light text-gray hover:bg-gray-lightest transition duration-500`}>
             <img src={path} alt={icon} className="inline-block mr-1" />
             <span className="font-large">
                 {caption}
