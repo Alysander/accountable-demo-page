@@ -4,7 +4,7 @@ import { Milestone } from "./Milestone";
 
 const MilestoneList = () => (
 
-    <div className="dynamic-px base-container py-4 flex flex-col gap-4 h-full lg:h-unset">
+    <div className="dynamic-px base-container py-4 flex flex-col gap-4 h-full lg:order-1 lg:row-span-2 lg:h-max-content ">
         <h2>
             Milestones
         </h2>

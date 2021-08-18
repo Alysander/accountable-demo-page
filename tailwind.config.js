@@ -15,6 +15,7 @@ module.exports = {
       "1em": "1em",
       "0.66em": "0.66em",
       "0.33em": "0.33em",
+      "max-content": "max-content",
       unset: "unset",
     },
     colors: {

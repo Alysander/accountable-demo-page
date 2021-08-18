@@ -17,8 +17,8 @@ function App() {
         <div className="md:col-span-2 lg:col-span-1 lg:row-span-2 lg:order-2">
           <ArticleList />
         </div>
-        <div className="lg:order-4"><TrendingPostList /></div>
-        <div className="lg:order-1 lg:row-span-2"><MilestoneList /></div>
+        <TrendingPostList />
+        <MilestoneList />
         <div className="md:col-span-2 lg:col-span-1 lg:order-3">
           <Livestream />
         </div>
