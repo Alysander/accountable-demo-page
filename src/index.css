@@ -75,4 +75,27 @@ body {
   .remove-hover-underline:hover {
     text-decoration-color: transparent;
   }
+
+  @variants responsive {
+    .lg-layout-page {
+      grid-template-columns: 320px auto 250px;
+      grid-template-rows: 200px auto;
+
+      grid-template-areas:
+        "milestones articles livestream"
+        "milestones articles trending";
+    }
+    .lg-layout-articles {
+      grid-area: articles;
+    }
+    .lg-layout-milestones {
+      grid-area: milestones;
+    }
+    .lg-layout-livestream {
+      grid-area: livestream;
+    }
+    .lg-layout-trending {
+      grid-area: trending;
+    }
+  }
 }

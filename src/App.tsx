@@ -14,14 +14,14 @@ function App() {
         py-8
         grid grid-cols-1 gap-4
         md:px-8 md:grid-cols-2
-        lg:grid-cols-large lg:grid-rows-large  top-level-max-width
+        lg:lg-layout-page  top-level-max-width
       `}>
-        <div className="md:col-span-2 lg:col-span-1 lg:row-span-2 lg:order-2">
+        <div className="md:col-span-2 lg:lg-layout-articles">
           <ArticleList />
         </div>
-        <div className="lg:order-4"><TrendingPostList /></div>
-        <div className="lg:order-1 lg:row-span-2"><MilestoneList /></div>
-        <div className="md:col-span-2 lg:col-span-1 lg:order-3">
+        <div className="lg:lg-layout-trending"><TrendingPostList /></div>
+        <div className="lg:lg-layout-milestones"><MilestoneList /></div>
+        <div className="md:col-span-2 lg:lg-layout-livestream ">
           <Livestream />
         </div>
       </main>
