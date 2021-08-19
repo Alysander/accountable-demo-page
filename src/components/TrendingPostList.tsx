@@ -3,7 +3,7 @@ import { David, May, Sara } from "../exampleData/example_authors";
 import { TrendingPost } from "./TrendingPost";
 
 const TrendingPostList = () => (
-    <div className="dynamic-px base-container py-4 flex flex-col gap-3 h-full lg:order-4 lg:h-max-content">
+    <div className="dynamic-px base-container py-4 flex flex-col gap-3 h-full lg:h-unset ">
         <h3 className="text-gray font-bold">
             🔥 Trending Posts
         </h3>
