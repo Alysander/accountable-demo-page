@@ -19,9 +19,9 @@ function App() {
         <div className="md:col-span-2 lg:lg-layout-articles">
           <ArticleList />
         </div>
-        <div className="lg:lg-layout-trending"><TrendingPostList /></div>
-        <div className="lg:lg-layout-milestones"><MilestoneList /></div>
-        <div className="md:col-span-2 lg:lg-layout-livestream ">
+        <div className="md:order-3 lg:lg-layout-trending"><TrendingPostList /></div>
+        <div className="md:order-2 lg:lg-layout-milestones"><MilestoneList /></div>
+        <div className="md:order-4 md:col-span-2 lg:lg-layout-livestream ">
           <Livestream />
         </div>
       </main>
