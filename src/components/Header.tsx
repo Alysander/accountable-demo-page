@@ -12,26 +12,28 @@ const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <header className="px-4 py-4 bg-white md:px-8 ">
-            <div className="flex justify-between top-level-max-width flex-wrap top-level-max-width ">
+        <header className="px-4 py-4 bg-white md:px-8 lg:px-0">
+            <div className="lg:px-8 top-level-max-width">
+                <div className="flex justify-between flex-wrap">
 
-                <img src={logoPath} alt="Logo" />
-                <button className="lg:hidden">
-                    <img src={hamburgerMenuPath} alt="Menu" onClick={() => { setMobileMenuOpen(!mobileMenuOpen) }} />
-                </button>
-                {/* 1) Must overflow on small screens so set min-w to 100%
+                    <img src={logoPath} alt="Logo" />
+                    <button className="lg:hidden">
+                        <img src={hamburgerMenuPath} alt="Menu" onClick={() => { setMobileMenuOpen(!mobileMenuOpen) }} />
+                    </button>
+                    {/* 1) Must overflow on small screens so set min-w to 100%
                     2) So that it doesn't permanently take up space on the screen, set it to 0px height when it's closed.
                     3) Scale up height when it's open and add on appropriate margin above it
                     4) Prevent it overflowing on md screens and closed state styling (extra margin, opacity, height)
                       */}
-                <NavList className={" min-w-full " +
-                    " lg:min-w-min lg:mt-unset lg:opacity-100 lg:h-auto lg:transition-none" +
-                    " transform transition ease-in duration-200 origin-top " +
-                    (
-                        mobileMenuOpen ? "mt-4 opacity-100 h-auto"
-                            : "opacity-0 h-0 ")} />
-                <div className="hidden lg:block" >
-                    <AccountLink />
+                    <NavList className={" min-w-full " +
+                        " lg:min-w-min lg:mt-unset lg:opacity-100 lg:h-auto lg:transition-none" +
+                        " transform transition ease-in duration-200 origin-top " +
+                        (
+                            mobileMenuOpen ? "mt-4 opacity-100 h-auto"
+                                : "opacity-0 h-0 ")} />
+                    <div className="hidden lg:block" >
+                        <AccountLink />
+                    </div>
                 </div>
             </div>
         </header>
