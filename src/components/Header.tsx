@@ -12,8 +12,8 @@ const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <header className="px-4 py-4 bg-white md:px-8">
-            <div className="flex justify-between top-level-max-width flex-wrap">
+        <header className="px-4 py-4 bg-white md:px-8 ">
+            <div className="flex justify-between top-level-max-width flex-wrap top-level-max-width ">
 
                 <img src={logoPath} alt="Logo" />
                 <button className="lg:hidden">
@@ -44,15 +44,16 @@ const NavList = ({ className }: { className: string }) => (
             <ListLink>Feed</ListLink>
             <ListLink>Milestones</ListLink>
             <ListLink>Groups</ListLink>
-            <div className="lg:hidden"><ListLink>{Evans.full_name} </ListLink></div>
+            <ListLink className="lg:hidden">{Evans.full_name} </ListLink>
         </ul>
     </nav >
 )
-const ListLink = ({ children }: { children: ReactNode }) => (
-    <a href="#" className="hover:text-orange hover-underline">
-        <li>{children}</li>
-    </a>
+const ListLink = ({ children, className }: { children: ReactNode, className?: string }) => (
+    <li>
+        <a href="#" className={`hover:text-orange hover-underline ${className}`} >{children} </a >
+    </li>
 )
+
 const AccountLink = () => (
     <div className="flex">
         <button className="rounded-full border border-gray-lighter w-6 h-6 mx-3 transition hover:bg-gray-lightest">
